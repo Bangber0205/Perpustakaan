@@ -122,26 +122,30 @@ main .isi{
     padding: 10px 30px 40px 30px;
     margin: 0 0 10px 0;
     border-radius: 0 0 0 50px;
-    background: url('images/bg-isi.jpg');
+    background: url('images/bg\ isi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 .isi label{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 5px;
+    gap: 7px;
 }
 label{
-    font-size: 15px;
+    font-size: 16px;
 }
 input{
     width: 600px;
     height: 35px;
-    background-color: rgb(255, 255, 255, 0.7);
-    border: 1px;
-    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 7px 1px rgb(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 7px 1px rgb(0, 0, 0, 0.5);
 }
 input[type=text]{
     padding: 5px 0px 5px 15px;
@@ -175,7 +179,7 @@ footer{
 .separator{
     width: 1px;
     height: 100px;
-    background-color: black;
+    background-color: white;
     margin-top: 2%;
 }
 footer section{
