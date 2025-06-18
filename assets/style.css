@@ -10,22 +10,23 @@ body{
     background-attachment: scroll;
 }
 :root{
-    --primary-color: rgb(0, 110, 255);   
+    --primary-color: rgb(0, 140, 255);   
     --secondary-color: rgb(255, 230, 0);
-    --extra-color: white;
+    --extra-color: rgba(255, 255, 255, 0.5);
+    --tertier-color: rgb(72, 255, 0);
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px 20px 20px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, var(--tertier-color), var(--secondary-color));
 }
 .logo-nav{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Tangerine", cursive;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
 }
 .navbar{
     display: flex;
@@ -68,7 +69,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
+    background-color: var(--tertier-color);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.5);
@@ -128,7 +129,7 @@ label{
 input{
     width: 600px;
     height: 35px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.7);
     border: 1px;
     border-radius: 10px;
 }
@@ -147,7 +148,7 @@ input[type=text]{
     }
 }
 footer{
-    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to left, var(--extra-color), var(--secondary-color));
     border-radius: 0px 300px 0 0;
     width: 100%;
     display: flex;
