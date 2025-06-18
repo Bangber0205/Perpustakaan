@@ -4,26 +4,31 @@
     margin: 0;
 }
 body{
-    background: url('images/background\ body.jpg');
+    background: url('images/bg\ body\ 2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
 }
 :root{
     --primary-color: rgb(0, 140, 255);   
-    --secondary-color: rgb(255, 230, 0);
-    --extra-color: rgba(255, 255, 255, 0.5);
-    --tertier-color: rgb(72, 255, 0);
+    --secondary-color: rgb(255, 123, 0);
+    --extra-color: rgba(255, 255, 255, 0.3);
+    --extra-color2: white;
+    --extra-color3: rgb(100, 100, 100);
+    --tertier-color: rgba(136, 255, 0, 0.7);
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px 20px 20px;
-    background: linear-gradient(to right, var(--tertier-color), var(--secondary-color));
+    background: url('images/bg\ nav.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 .logo-nav{
-    color: rgb(0, 0, 0);
+    color: var(--extra-color2);
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-size: 30px;
@@ -41,46 +46,48 @@ nav{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: black;
 }
-.a-home{
+.a-home a{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     border-radius: 5px;
+    color: white;
 }
-.a-home:hover,.a-daftar:hover{
+.a-home a:hover,.a-daftar a:hover{
     transition: all ease 0.3s;
     background-color: var(--extra-color);
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     transform: scale(1.05);
 }
-.a-daftar{
+.a-daftar a{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     border-radius: 5px;
+    color: white;
 }
-.a-review{
+.a-review a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--tertier-color);
+    background-color: var(--secondary-color);
+    color: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
     -moz-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
 }
-.a-review:hover{    
+.a-review a:hover{    
     transition: all ease 0.3s;
     background-color: white;
     transform: scale(1.05);
     cursor: pointer;
+    color: black;
 }
 main{
     width: 50%;
@@ -97,8 +104,11 @@ main{
     font-family: "Tangerine", cursive;
     padding-top: 10px;
     font-size: 25px;
-    background-color: var(--secondary-color);
-    color: black;
+    background: url("images/bg\ nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
     border-radius: 0 50px 0 0;
 }
 main .isi{
@@ -148,29 +158,54 @@ input[type=text]{
     }
 }
 footer{
-    background: linear-gradient(to left, var(--extra-color), var(--secondary-color));
-    border-radius: 0px 300px 0 0;
+    background: url("images/bg\ nav.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0 0 0 0;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
     margin: 10% 0 0 0;
+    padding: 20px 0 20px 0;
+    color: var(--extra-color2);
+}
+.separator{
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    margin-top: 2%;
 }
 footer section{
     animation: appear 0.5s;
 }
 footer a{
     text-decoration: none;
-    color: black;
     font-family: "Poppins", sans-serif;
+    color: var(--extra-color2);
 }
 footer a:hover{
     transition: all ease 0.2s;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(150, 150, 150);
 }
-.contact-us{
-    padding: 10px 0 10px 0;
+.info-footer{
+    width: 30%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info h1{
+    font-family: "Tangerine", cursive;
+    font-size: 50px;
+}
+.info p{
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 15px;
 }
 .contact{
     display: flex;
@@ -178,8 +213,8 @@ footer a:hover{
     row-gap: 5px;
 }
 .judul-contact{
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
     font-weight: 600;
 }
 .alamat{
@@ -200,12 +235,6 @@ footer a:hover{
     justify-content: flex-start;
     gap: 10px;
 }
-.social-media{
-    padding: 10px 0 10px 0;
-}
-.quick-links{
-    padding: 10px 0 10px 0;
-}
 .ig{
     display: flex;
     align-items: center;
@@ -225,8 +254,8 @@ footer a:hover{
     gap: 10px;
 }
 .judul-socmed{
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
     font-weight: 600;
 }
 .socmed{
@@ -243,8 +272,8 @@ footer a:hover{
     row-gap: 5px;
 }
 .judul-qlinks{
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
     font-weight: 600;
 }
 .isi-qlinks{
