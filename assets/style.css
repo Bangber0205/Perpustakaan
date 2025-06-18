@@ -76,23 +76,18 @@ main{
     width: 50%;
     margin-top: 5%;
     margin-left: 25%;
-    box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
-    border-radius: 0 50px 0 50px;
-    animation: appear 0.5s;
+    animation: appear 2.5s;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px 10px 10px 10px;
 }
 .judul-isi{
     text-align: center;
     font-family: "Tangerine", cursive;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 25px;
-    background: url("images/bg\ isi.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    color: black;
-    border-radius: 0 50px 0 0;
+    color: rgb(255, 255, 255);
 }
 main .isi{
     display: flex;
@@ -101,14 +96,8 @@ main .isi{
     justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    background-color: var(--extra-color);
-    padding: 10px 30px 40px 30px;
+    padding: 10px 30px 40px 50px;
     margin: 0 0 10px 0;
-    border-radius: 0 0 0 50px;
-    background: url('images/bg\ isi.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .isi label{
     display: flex;
@@ -119,20 +108,21 @@ main .isi{
 }
 label{
     font-size: 16px;
+    color: white;
 }
 input{
-    width: 600px;
+    width: 550px;
     height: 35px;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 1px 2px 7px 1px rgb(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 2px 7px 1px rgb(0, 0, 0, 0.5);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
 }
 input[type=text]{
     padding: 5px 0px 5px 15px;
     font-size: 15px;
+}
+input::placeholder{
+    color: white;
 }
 @keyframes appear {
     from{
@@ -161,7 +151,7 @@ footer{
     margin-top: 2%;
 }
 footer section{
-    animation: appear 3s;
+    animation: appear 4s;
 }
 footer a{
     text-decoration: none;
