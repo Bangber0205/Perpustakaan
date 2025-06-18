@@ -22,10 +22,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px 20px 20px;
-    background: url('images/bg\ nav.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
 }
 .logo-nav{
     color: var(--extra-color2);
@@ -55,12 +51,10 @@ nav{
     border-radius: 5px;
     color: white;
 }
-.a-home a:hover,.a-daftar a:hover{
-    transition: all ease 0.3s;
-    background-color: var(--extra-color);
-    border-radius: 5px;
+.a-home a:hover,.a-daftar a:hover, .a-review a:hover{
+     transition: all ease 0.3s;
     cursor: pointer;
-    transform: scale(1.05);
+    color: rgb(133, 133, 133);
 }
 .a-daftar a{
     display: flex;
@@ -74,20 +68,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
     color: white;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 4px 15px 2px rgb(0, 0, 0, 0.5);
-}
-.a-review a:hover{    
-    transition: all ease 0.3s;
-    background-color: white;
-    transform: scale(1.05);
-    cursor: pointer;
-    color: black;
 }
 main{
     width: 50%;
@@ -104,11 +87,11 @@ main{
     font-family: "Tangerine", cursive;
     padding-top: 10px;
     font-size: 25px;
-    background: url("images/bg\ nav.jpg");
+    background: url("images/bg\ isi.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    color: white;
+    background-position: bottom;
+    color: black;
     border-radius: 0 50px 0 0;
 }
 main .isi{
@@ -162,18 +145,13 @@ input[type=text]{
     }
 }
 footer{
-    background: url("images/bg\ nav.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    border-radius: 0 0 0 0;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 60px;
-    margin: 10% 0 0 0;
-    padding: 20px 0 20px 0;
+    margin: 15% 0 0 0;
+    padding: 20px 0 30px 0;
     color: var(--extra-color2);
 }
 .separator{
@@ -183,7 +161,7 @@ footer{
     margin-top: 2%;
 }
 footer section{
-    animation: appear 0.5s;
+    animation: appear 3s;
 }
 footer a{
     text-decoration: none;
@@ -268,7 +246,8 @@ footer a:hover{
     row-gap: 5px;
 }
 .socmed a{
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 300;
 }
 .qlinks{
     display: flex;
@@ -283,6 +262,8 @@ footer a:hover{
 .isi-qlinks{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 300;
+    row-gap: 5px;
 }
 
