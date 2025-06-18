@@ -107,7 +107,7 @@ main{
     background: url("images/bg\ nav.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
     border-radius: 0 50px 0 0;
 }
@@ -125,7 +125,7 @@ main .isi{
     background: url('images/bg\ isi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 .isi label{
     display: flex;
@@ -141,7 +141,7 @@ input{
     width: 600px;
     height: 35px;
     border: 1px solid black;
-    background-color: transparent;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 1px 2px 7px 1px rgb(0, 0, 0, 0.5);
@@ -164,7 +164,7 @@ input[type=text]{
 footer{
     background: url("images/bg\ nav.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     border-radius: 0 0 0 0;
     width: 100%;
