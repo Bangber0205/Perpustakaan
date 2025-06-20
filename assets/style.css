@@ -78,9 +78,10 @@ main{
     margin-left: 25%;
     animation: appear 2.5s;
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 5px 30px -3px rgba(0,0,0,0.75);
 }
 .judul-isi{
     text-align: center;
@@ -123,6 +124,28 @@ input[type=text]{
 }
 input::placeholder{
     color: white;
+}
+.kirim{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 95%;
+}
+.kirim input{
+    padding: 7px 10px 10px 10px;
+    width: fit-content;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    box-shadow: 1px 5px 30px -3px rgba(0,0,0,0.75);
+}
+.kirim input:hover{
+    transition: all ease 0.3s;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
 }
 @keyframes appear {
     from{
