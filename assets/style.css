@@ -4,10 +4,11 @@
     margin: 0;
 }
 body{
-    background: url('images/bg\ body\ 2.jpg');
+    background: url('images/bg\ body.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    background-position: center;
 }
 :root{
     --primary-color: rgb(0, 140, 255);   
@@ -72,91 +73,6 @@ nav{
     padding: 10px;
     border-radius: 5px;
 }
-main{
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
-    animation: appear 2.5s;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 1px 5px 30px -3px rgba(0,0,0,0.75);
-}
-.judul-isi{
-    text-align: center;
-    font-family: "Tangerine", cursive;
-    padding-top: 20px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-}
-main .isi{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    padding: 10px 30px 40px 50px;
-    margin: 0 0 10px 0;
-}
-.isi label{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 7px;
-}
-label{
-    font-size: 16px;
-    color: white;
-}
-input{
-    width: 550px;
-    height: 35px;
-    border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    background-color: transparent;
-}
-input[type=text]{
-    padding: 5px 0px 5px 15px;
-    font-size: 15px;
-}
-input::placeholder{
-    color: white;
-}
-.kirim{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 95%;
-}
-.kirim input{
-    padding: 7px 10px 10px 10px;
-    width: fit-content;
-    border: none;
-    border-radius: 3px;
-    background-color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    box-shadow: 1px 5px 30px -3px rgba(0,0,0,0.75);
-}
-.kirim input:hover{
-    transition: all ease 0.3s;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    cursor: pointer;
-}
-@keyframes appear {
-    from{
-        opacity: 0.5;
-        transform: translateY(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 footer{
     width: 100%;
     display: flex;
@@ -166,6 +82,8 @@ footer{
     margin: 15% 0 0 0;
     padding: 20px 0 30px 0;
     color: var(--extra-color2);
+    background: linear-gradient(to right, blue, rgb(0, 162, 255));
+    border-radius: 50px 50px 0 0;
 }
 .separator{
     width: 1px;
